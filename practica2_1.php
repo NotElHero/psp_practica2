@@ -16,22 +16,22 @@
 
     switch ($var) {
         case 1:
-            echo "<img src='dados/dado1.png'>";
+            echo "<img src='dados/uno.png'>";
             break;
         case 2:
-            echo "<img src='dados/dado2.png'>";
+            echo "<img src='dados/dos.png'>";
             break;
         case 3:
-            echo "<img src='dados/dado3.png'>";
+            echo "<img src='dados/tres.png'>";
             break;
         case 4:
-            echo "<img src='dados/dado4.png'>";
+            echo "<img src='dados/cuatro.png'>";
             break;
         case 5:
-            echo "<img src='dados/dado5.png'>";
+            echo "<img src='dados/cinco.png'>";
             break;
         case 6:
-            echo "<img src='dados/dado6.png'>";
+            echo "<img src='dados/seis.png'>";
             break;                
     }
     echo "<br>";

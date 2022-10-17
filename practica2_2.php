@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,114 @@
     <meta name="author" content="Javier Villacorta">
     <title>Ejercicio2</title>
 </head>
+
 <body>
+    <?php
+    $var1 = rand(1, 6);
+    $var2 = rand(1, 6);
+    $var3 = rand(1, 6);
+    $var4 = rand(1, 6);
+    $jugador1 = $var1 + $var2;
+    $jugador2 = $var3 + $var4;
+
+    switch ($var1) {
+        case 1:
+            echo "<img src='dados/uno.png'>";
+            break;
+        case 2:
+            echo "<img src='dados/dos.png'>";
+            break;
+        case 3:
+            echo "<img src='dados/tres.png'>";
+            break;
+        case 4:
+            echo "<img src='dados/cuatro.png'>";
+            break;
+        case 5:
+            echo "<img src='dados/cinco.png'>";
+            break;
+        case 6:
+            echo "<img src='dados/seis.png'>";
+            break;
+    }
+
+    switch ($var2) {
+        case 1:
+            echo "<img src='dados/uno.png'>";
+            break;
+        case 2:
+            echo "<img src='dados/dos.png'>";
+            break;
+        case 3:
+            echo "<img src='dados/tres.png'>";
+            break;
+        case 4:
+            echo "<img src='dados/cuatro.png'>";
+            break;
+        case 5:
+            echo "<img src='dados/cinco.png'>";
+            break;
+        case 6:
+            echo "<img src='dados/seis.png'>";
+            break;
+    }
+
+    switch ($var3) {
+        case 1:
+            echo "<img src='dados/uno.png'>";
+            break;
+        case 2:
+            echo "<img src='dados/dos.png'>";
+            break;
+        case 3:
+            echo "<img src='dados/tres.png'>";
+            break;
+        case 4:
+            echo "<img src='dados/cuatro.png'>";
+            break;
+        case 5:
+            echo "<img src='dados/cinco.png'>";
+            break;
+        case 6:
+            echo "<img src='dados/seis.png'>";
+            break;
+    }
+
+    switch ($var4) {
+        case 1:
+            echo "<img src='dados/uno.png'>";
+            break;
+        case 2:
+            echo "<img src='dados/dos.png'>";
+            break;
+        case 3:
+            echo "<img src='dados/tres.png'>";
+            break;
+        case 4:
+            echo "<img src='dados/cuatro.png'>";
+            break;
+        case 5:
+            echo "<img src='dados/cinco.png'>";
+            break;
+        case 6:
+            echo "<img src='dados/seis.png'>";
+            break;
+    }
+
+
+    if ($jugador1 > $jugador2) {
+        echo "<br>";
+        echo "El jugador 1 ha ganado con ", $jugador1 - $jugador2, " puntos";
+    } else if ($jugador2 > $jugador1) {
+        echo "<br>";
+        echo "El jugador 2 ha ganado con ", $jugador2 - $jugador1, " puntos";
+    } else {
+        echo "<br>";
+        echo "Los dos jugadores han empatado";
+    }
     
+
+    ?>
 </body>
+
 </html>
