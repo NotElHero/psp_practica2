@@ -9,8 +9,40 @@
 </head>
 <body>
     <?php
-    //como en el ejercicio 3 de la practica anterior, tengo que trabajar. Pero si quiero entregar la practica a tiempo, tiene que estar a medias
-    //ya me ocupare cuando tenga tiempo
+    $nCartas = 2;
+
+    //Jugador 1
+    echo "Jugador 1";
+    echo "<br>";
+    sacarCartas(2);
+    echo "<br>";
+
+    //Jugador 2
+    echo "Jugador 2";
+    echo "<br>";
+    sacarCartas(2);
+    
+
+    function sacarCartas($nCartas)
+    {
+        for ($i=0; $i < $nCartas; $i++) { 
+            switch (rand(1, 4)) {
+                case 1:
+                    $baraja = 'Bastos';
+                    break;
+                case 2:
+                    $baraja = 'Copas';
+                    break;
+                case 3:
+                    $baraja = 'Oros';
+                    break;
+                case 4:
+                    $baraja = 'Espadas';
+                    break;
+                }
+            echo "<img src='baraja/", strval($baraja), "/", rand(1, 12), ".jpg'>";
+        }
+    }
     ?>
 </body>
 </html>
