@@ -15,9 +15,9 @@
     $var2 = rand(1, 6);
     $var3 = rand(1, 6);
     $var4 = rand(1, 6);
-    $jugador1 = $var1 + $var2;
-    $jugador2 = $var3 + $var4;
 
+    echo "jugador 1";
+    echo "<br>";
     switch ($var1) {
         case 1:
             echo "<img src='dados/uno.png'>";
@@ -59,7 +59,9 @@
             echo "<img src='dados/seis.png'>";
             break;
     }
-
+    echo "<br>";
+    echo "jugador 2";
+    echo "<br>";
     switch ($var3) {
         case 1:
             echo "<img src='dados/uno.png'>";
@@ -102,13 +104,15 @@
             break;
     }
 
+    $jugador1 = $var1 + $var2;
+    $jugador2 = $var3 + $var4;
 
     if ($jugador1 > $jugador2) {
         echo "<br>";
-        echo "El jugador 1 ha ganado con ", $jugador1 - $jugador2, " puntos";
+        echo "El jugador 1 ha ganado con ", $var1 + $var2, " puntos";
     } else if ($jugador2 > $jugador1) {
         echo "<br>";
-        echo "El jugador 2 ha ganado con ", $jugador2 - $jugador1, " puntos";
+        echo "El jugador 2 ha ganado con ", $var3 + $var4, " puntos";
     } else {
         echo "<br>";
         echo "Los dos jugadores han empatado";

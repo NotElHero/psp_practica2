@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Javier Villacorta">
-    <title>Ejercicio1</title>
+    <title>Ejercicio2_1</title>
 </head>
 <body>
     <?php
@@ -40,7 +40,7 @@
     
     if ($res >= 10) {
         echo "buena";
-    } else if ($res >= 5 || $res < 10) {
+    } else if ($res >= 5 && $res < 10) {
         echo "normal";
     } else if ($res < 5) {
         echo "mala";
